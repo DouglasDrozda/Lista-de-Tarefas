@@ -1,0 +1,258 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+#criar-tarefa {
+  width: 150px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.container{
+  display: flex;
+  /* border: 1px solid red; */
+  background-color: #2b2b2b;
+  justify-content: center;
+}
+.container2 h1{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 40px;
+}
+.container2{
+  display: flex;
+  color: white;
+  padding: 35px;
+  /* border: 1px solid red; */
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-input{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  background-color: #131C25;
+  padding: 151px;
+}
+
+.container-input2{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 70%;
+  justify-content: center;
+  font-size: 20px;
+  padding: 83px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  box-shadow: 5px 4px 10px rgb(209, 207, 207);
+}
+
+.container-tarefa{
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  /* border: 1px solid red; */
+  justify-content: center;
+  text-align: center;
+}
+
+.container-input2 h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.input-tarefa{
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+#texto-tarefa{
+  padding:10px;
+  border-radius:10px;
+  border:1px solid black;
+  margin-top: 20px;
+  width: 300px;
+}
+
+#criar-tarefa{
+  font-size: 16px;
+  border-radius: 10px;
+  width: 130px;
+  border: 1px solid black;
+  background-color: #6ca5dd;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#criar-tarefa:hover, #apaga-tudo:hover, #remover-finalizados:hover, #salvar-tarefas:hover{
+  opacity: 0.8;
+}
+
+#apaga-tudo{
+  font-size: 16px;
+  border-radius: 10px;
+  width: 130px;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: #f70d1a;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#remover-finalizados{
+  font-size: 16px;
+  border-radius: 10px;
+  width: 150px;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: #990000;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#salvar-tarefas{
+  font-size: 16px;
+  border-radius: 10px;
+  width: 150px;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: #6e9c01;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.rodape{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  background-color: #2b2b2b;
+  padding: 40px;
+}
+
+.rodape2{
+  /* border: 1px solid red; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.rodape2 p{
+  margin-top: 5px;
+}
+
+img{
+  margin: 0 2px;
+}
+
+@media screen and (max-width: 414px){
+  .container2 h1{
+    font-size: 20px;
+  }
+  
+   .container2{
+    /* border: 1px solid red; */
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container2 img{
+    display: none;
+  }
+
+  .container-input{
+    padding: 10px;
+  }
+
+  .container-input2{
+    /* border: 1px solid red; */
+    width: 90%;
+    font-size: 16px;
+    padding: 0px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    box-shadow: 2px 1px 10px rgb(209, 207, 207);
+  }
+
+  #texto-tarefa{
+    width: 200px
+  }
+
+  #apaga-tudo, #remover-finalizados, #salvar-tarefas{
+    margin: 5px;
+  }
+
+  /* .input-tarefa2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px){
+  .container-tarefa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  #texto-tarefa{
+    width: 230px;
+    margin: 10px;
+  }
+
+  #funcionamento{
+    text-align: center;
+  }
+
+  .input-tarefa{
+    display: flex;
+  }
+
+  .input-tarefa2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 50px;
+  }
+
+  #apaga-tudo{
+    margin: 10px;
+  }
+
+  #remover-finalizados{
+    margin: 10px;
+  }
+
+  #salvar-tarefas{
+    margin: 10px;
+  }
+
+  .container-input2{
+    padding: 50px;
+    width: 90%;
+  }
+}

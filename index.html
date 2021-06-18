@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Project To do List</title>
+</head>
+
+<body>
+
+  <header class="container">
+    <div class="container2">
+      <h1>Minha lista de Tarefas</h1>
+      <a href="https://www.betrybe.com/" target="_blank">
+        <img src="/trybe-logo1.jpg" alt="trybe-logo" width="50px">
+      </a>
+    </div>
+  </header>
+
+  <section class="container-input">
+    <div class="container-input2">
+      <h1>Adicione os itens de sua lista no campo abaixo <a href='https://emojitool.com/pt/memo'>📝</a></h1>
+      <div class="container-tarefa">
+        <div>
+          <p id="funcionamento"><em>Clique duas vezes em um item para marcá-lo como completo </em>&#x2714;&#xfe0f;</p>
+          <input id="texto-tarefa" type="input" placeholder="ex: Ir a academia">
+          <button id="criar-tarefa">Adicionar item</button>
+        </div>
+        <section class="input-tarefa">
+          <div class="input-tarefa2">
+            <ol id="lista-tarefas"></ol>
+            <button id="apaga-tudo">Limpar lista</button>
+            <button id="remover-finalizados">Limpar completo</button>
+            <button id="salvar-tarefas">Salvar Tarefas</button>
+            <!-- <button id="mover-cima">⬆️</button> -->
+
+
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="rodape2">
+      <div class="insta">
+        <a href="https://www.instagram.com/doouglasdrozda/" target="_blank">
+          <img class="social-img" src="/instagram-logo1.png" alt="Instagram logo" width="50px" />
+        </a>
+        <a href="https://www.linkedin.com/in/douglasdrozda/" target="_blank">
+          <img class="social-img" src="/linked-in-logo1.png" alt="Linkedin logo" width="50px" />
+        </a>
+        <p>©Douglas Drozda</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
