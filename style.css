@@ -23,7 +23,7 @@
   justify-content: center;
 }
 .container2 h1{
-  font-family: 'Epilogue', sans-serif;
+  /* font-family: 'Staatliches', cursive; */
   font-size: 40px;
 }
 .container2{
@@ -141,6 +141,10 @@
   opacity: 1;
 }
 
+#lista-tarefas{
+  text-align: left;
+}
+
 .rodape{
   /* border: 1px solid red; */
   display: flex;
@@ -181,8 +185,12 @@
 
 @media screen and (max-width: 414px){
   .container2 h1{
-    font-size: 26px;
-    font-family: 'Staatliches', cursive;
+    font-size: 23px;
+    /* font-family: 'Staatliches', cursive; */
+  }
+
+  #lista-tarefas{
+    text-align: center;
   }
 
    .container2{
@@ -242,17 +250,6 @@
 
   .input-tarefa{
     display: flex;
-  }
-
-  .input-tarefa2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 50px;
-  }
-
-  #apaga-tudo{
-    margin: 10px;
   }
 
   #remover-finalizados{

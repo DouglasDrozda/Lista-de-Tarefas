@@ -12,7 +12,6 @@ function addTarefa(){
     const li = document.createElement('li');
     listaTarefas.appendChild(li);
     li.innerText = texto;
-
     textoTarefa.value = "";        // retorna o input limpo 
     textoTarefa.focus();          // continua com o cursor no input
 
